@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszytkie portale</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #442929;
+        }
+
+        .flex-container > div {
+            margin: 10px;
+            font-size: 30px;
+        }
+        h3,label{
+            color:white;
+        }
+        .nowa{
+            width:15%;
+        }
+    </style>
+</head>
+    <body style="background-color: #442929;">
+        <h3>Diagnoza IP</h3>  
+        <div class="nowa" style="margin:0px;">
+            <form method="post" action="check_ip" id="formularz">
+                <label>Podaj IP</label><input class="form-control" type="text" name="adres_ip" onKeyDown="lock_enter()" required=""/>
+                <button class="btn btn-lg btn-primary btn-block">Sprawdź</button>  
+            </form>
+        </div>
+    </body>
+
+</html>
